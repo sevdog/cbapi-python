@@ -987,7 +987,7 @@ class BuildsQuery(SimpleQuery):
 
 
 class SensorQuery(SimpleQuery):
-    valid_field_names = ['ip', 'hostname', 'groupid']
+    valid_field_names = ['ip', 'hostname', 'groupid', 'uninstall', 'uninstalled', 'os_type']
     _multiple_where_clauses_accepted = True
 
     def __init__(self, cls, cb):
